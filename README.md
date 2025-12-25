@@ -60,37 +60,6 @@ Her oda için:
 
 ---
 
-## 📁 Proje Klasör Yapısı
-odev/
-├── launch/
-│ ├── gazebo.launch
-│ ├── amcl.launch
-│ ├── move_base.launch
-│
-├── worlds/
-│ └── ev_dunyasi.world
-│
-├── maps/
-│ ├── ev_haritam.yaml
-│ └── ev_haritam.pgm
-│
-├── config/
-│ └── mission.yaml
-│
-├── src/
-│ └── mission_manager.py
-│
-├── qr_codes/
-│ ├── livingroom_qr.png
-│ ├── kitchen_qr.png
-│ ├── bedroom_qr.png
-│ └── toilet_qr.png
-│
-└── README.md
-
-
----
-
 ## 🧾 mission.yaml
 Görevler ve waypoint’ler **config/mission.yaml** dosyasından okunmaktadır.
 
