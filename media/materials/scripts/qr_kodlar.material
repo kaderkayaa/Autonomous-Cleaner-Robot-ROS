@@ -1,0 +1,55 @@
+material Odev/LivingroomQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture livingroom_qr.png
+      }
+    }
+  }
+}
+
+material Odev/KitchenQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture kitchen_qr.png
+      }
+    }
+  }
+}
+
+material Odev/BedroomQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture bedroom_qr.png
+      }
+    }
+  }
+}
+
+material Odev/ToiletQR
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture toilet_qr.png
+      }
+    }
+  }
+}

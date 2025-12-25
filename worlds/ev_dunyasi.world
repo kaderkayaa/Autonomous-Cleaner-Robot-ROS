@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+    <include><uri>model://turtlebot3_house</uri></include>
+
+    <model name="livingroom_qr">
+      <static>true</static>
+      <pose>2.25 0.30 0.16 0 1.5708 3.1415</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>0.4 0.4</size></plane></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Odev/LivingroomQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="kitchen_qr">
+      <static>true</static>
+      <pose>-0.02 0.51 0.16 0 1.5708 0.0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>0.4 0.4</size></plane></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Odev/KitchenQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="bedroom_qr">
+      <static>true</static>
+      <pose>5.99 -0.46 0.16 0 1.5708 1.5708</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>0.4 0.4</size></plane></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Odev/BedroomQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="toilet_qr">
+      <static>true</static>
+      <pose>2.11 4.60 0.16 0 1.5708 0.0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>0.4 0.4</size></plane></geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts</uri>
+              <uri>file://media/materials/textures</uri>
+              <name>Odev/ToiletQR</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <gui fullscreen="0">
+      <camera name="top_view">
+        <pose>0 0 18 0 1.5708 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>

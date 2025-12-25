@@ -1,0 +1,8 @@
+<launch>
+    <!-- move_base node'u başlat -->
+    <node name="move_base" pkg="move_base" type="move_base" output="screen">
+        <param name="base_global_planner" value="navfn/NavfnROS" />
+        <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+    </node>
+</launch>
+
